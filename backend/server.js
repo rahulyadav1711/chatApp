@@ -10,19 +10,23 @@ import { setIO } from "./src/socket/socketManager.js";
 
 const PORT = process.env.PORT || 4000;
 const server = http.createServer(app);
+
 const allowedOrigins = [
-    "https://www.chattalk.website",
-    "https://chat-c5u693dei-self-68af.vercel.app",
+  "http://localhost:5173",
+  "https://www.chattalk.website",
+  "https://chat-c5u693dei-self-68af.vercel.app",
 ];
 
 const io = new Server(server, {
-    cors: {
-        origin: allowedOrigins,
-        credentials: true,
-    },
+  cors: {
+    origin: allowedOrigins,
+    credentials: true,
+  },
 });
+
 setupSocket(io);
 setIO(io);
+
 server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
