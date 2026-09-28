@@ -12,9 +12,9 @@ const PORT = process.env.PORT || 4000;
 const server = http.createServer(app);
 
 const allowedOrigins = [
-  "http://localhost:5173",
   "https://www.chattalk.website",
   "https://chat-c5u693dei-self-68af.vercel.app",
+  "https://chat-app-kappa-ebon-i5ex07h946.vercel.app",
 ];
 
 const io = new Server(server, {
