@@ -53,5 +53,11 @@ app.use("/api/users", userRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/chats", chatRoutes);
 app.use("/api/otp", otpRoutes);
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "OK",
+    message: "ChatApp backend is running",
+  });
+});
 
 export default app;
