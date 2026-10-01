@@ -4,14 +4,9 @@ ChatTalk is a full-stack real-time chat application built with the **MERN stack*
 
 The application combines **REST APIs** for persistent operations with **Socket.IO** for real-time communication between users.
 
-## 🌐 Live Demo
-
-**[ChatTalk — Live Application](https://www.chattalk.website)**
-
 ## 📌 Project Overview
 
 The goal of ChatTalk is to build a modern messaging platform where users can:
-
 * Create an account and authenticate securely
 * Verify their email using OTP
 * Discover other users
